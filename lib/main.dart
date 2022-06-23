@@ -62,7 +62,9 @@ class _MyApp extends State<MyApp> {
 
                 initialRoute: '/',
                 routes: {
-                  '/': (context) => RoutMaker(child: PanelChart(),),
+                  '/': (context) => EsLogin(),
+                  // '/login': (context) => EsLogin(),
+                  // '/': (context) => RoutMaker(child: PanelChart(),),
                   '/chart': (context) => RoutMaker(child: PanelChart(),),
                   '/form': (context) => RoutMaker(child: PanelForm(),),
                   '/progressbar': (context) => RoutMaker(child: PanelProgressBar(),),
@@ -76,42 +78,11 @@ class _MyApp extends State<MyApp> {
                   '/dialog': (context) => RoutMaker(child: PanelDialogBox()),
                   '/textSample': (context) => RoutMaker(child: PanelTextSample()),
                   '/buttonSample': (context) => RoutMaker(child: PanelTextSample()),
-                  '/login': (context) => EsLogin()
+
                 },
-                // home:EsSimpleTable(),
               )),
     );
   }
 }
-// return ChangeNotifierProvider<LanguageChangeProvider>(
-//   create: (context) => LanguageChangeProvider(),
-//   child: Builder(builder: (context) {
-//     return MaterialApp(
-//         debugShowCheckedModeBanner: false,
-//         locale: Provider
-//             .of<LanguageChangeProvider>(context, listen: true)
-//             .currentLocale,
-//         title: 'Localizations Sample App',
-//         localizationsDelegates: [
-//           AppLocalizations.delegate, // Add this line
-//           GlobalMaterialLocalizations.delegate,
-//           GlobalWidgetsLocalizations.delegate,
-//           GlobalCupertinoLocalizations.delegate
-//         ],
-//         supportedLocales: [
-//           Locale('en', ''), // English, no country code
-//           Locale('fa', ''), // Spanish, no country code
-//         ],
-//         // initialRoute: '/',
-//         // routes: {
-//         // '/': (context) => EsSimpleTable(),
-//         // },
-//         home: Scaffold(
-//             // resizeToAvoidBottomInset: false,
-//             body: WidgetTreePanel()
-//         )
-//     );
-//   }),
-// );
 
 

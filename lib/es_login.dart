@@ -90,7 +90,7 @@ class _EsLogin extends State<EsLogin> {
                   // child: Text(Translations.of(context).text("login")),
                   onPressed: () {
                     // if(_formkey.currentState?.validate()==true)
-                    {Navigator.pushNamed(context, '/tree');}
+                    {Navigator.pushNamed(context, '/chart');}
                   },
                 )
               ],
