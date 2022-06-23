@@ -1,0 +1,163 @@
+{
+  "helloWorld": "Hello World!",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  "username": "Username",
+  "usernamehint": "Enter your username:",
+  "passwordhint": "Enter your password:",
+  "password": "Password",
+  "login": "Login",
+
+  "adminMenu": "Admin Menu",
+
+  "charts": "Charts",
+  "barCharts": "Bar Chart",
+  "circularCharts": "Circular Chart",
+  "linearChart": "linear Chart",
+
+  "text": "Text",
+  "sampleText": "Wishing is the reason for talent:)",
+  "ordinaryText": "Ordinary Text",
+  "titleText": "Title Text",
+  "labledText": "Labled Text",
+  "dottedText": "Dotted Text",
+  "markedText": "Marked Text",
+
+  "textSampleDescription": "different kinds of text with various size are available in panel.",
+  "dialogeBoxDescription": "different kinds of dialog box with various function are available in panel.",
+  "buttonDescription": "different kinds of button(Ordinary,with Icon,Loading) with various size are available in panel.",
+  "formDescription": "different kinds of forms with various function for giving data from user are available in panel.",
+  "imageDescription":  "different kinds of  function for image display for user are available in panel.",
+  "progressBarDescription":  "different kinds of  progress bar(linear and Circular) are available in panel.",
+  "sliderDescription":  "different kinds of  Slider are available in panel.",
+  "notificationsDescription":  "different kinds of  notifications are avaiable in panel.",
+  "chartDescription":   "different kinds of  charts are available in panel.",
+
+  "button": "Button",
+  "samplButton": "Save",
+
+  "dialogBox": "Dialog Box",
+  "successDialogTitle": "Successful",
+  "successDialogText": "Successful Dialog",
+  "successDialogDesc": "The process was Successful:)",
+
+  "errorDialogTitle": "Error",
+  "errorDialogText": "Error Dialog",
+  "errorDialogDesc": "The process has error!!!",
+
+  "infoDialogTitle": "Info",
+  "infoDialogText": "Info Dialog",
+  "infoDialogDesc": "The process has information",
+
+  "warningDialogTitle": "Warning",
+  "warningDialogText": "Warning Dialog",
+  "warningDialogDesc": "The process has warning",
+
+  "autoHideDialogTitle": "Auto Hide",
+  "autoHideDialogText": "Auto Hide Dialog",
+  "autoHideDialogDesc": "I disapear in 2 sec.",
+
+  "bodyDialogTitle": "Body dialog",
+  "bodyDialogText": "Body dialog",
+  "bodyDialogDesc": "body dialog body dialog body dialog body dialog body dialog",
+
+  "inputDialogTitle": "Input dialog",
+  "inputDialogText": "Input dialog",
+  "inputDialogDesc": "Input dialog",
+  "input1": "Input1",
+  "input2": "Input2",
+
+
+  "form": "Forms",
+
+  "textField": "Test Field",
+  "priceTextField": "Price Test Field",
+  "phoneNumbertextField": "Phone Number Test Field",
+  "shabaNumbertextField": "Shaba Number Test Field",
+  "datePickerfa": "Date Picker(Jalali)",
+  "datePickeren": "Date Picker(Gregorian)",
+  "timePickerHMS": "Time Picker(H:M:S)",
+  "timePickerHM": "Time Picker(H:M)",
+  "ordinarySlider": "Ordinary Slider",
+  "rangedSlider": "Ranged Slider",
+  "radioButons": "Radio Buttons",
+  "textArea": "Text Area",
+  "starRateBar": "Star Rate Bar",
+  "dropDownButton": "Drop Down Button",
+  "ordinaryCheckBox": "Ordinary Check Box",
+  "animationCheckBox": "Animation Check Box",
+  "validationCheckBox": "Check Box with validation",
+  "filePicker": "File and Folder Picker",
+
+
+  "textFieldType": "TextField",
+  "textFieldHint": "TextField Hint",
+
+  "textAreaType": "TextArea",
+  "textAreaHint": "TextArea Hint",
+
+  "datePickerTitle": "Select",
+  "androidTimePickerTitle": "Select",
+  "cupertinoTimePickerTitle": "Select",
+  "time12hPickerTitle": "Select",
+
+  "openText": "Open file picker",
+  "pickText": "Pick a folder",
+  "clearText": "Clear temporary files",
+
+  "checkBoxTitle": "CheckBox title",
+  "checkBoxWithValidator": "CheckBox with validator",
+  "animatedCheckBoxTitle": "AnimatedCheckBox",
+  "checkBoxErrorText": "CheckBox error text",
+  "checkBoxButtonText": "Save",
+
+  "dropDown1": "First Item",
+  "dropDown2": "Second Item",
+  "dropDown3": "Third Item",
+
+  "toggleButton": "Toggle Button",
+
+  "carouselSlider": "Carousel Slider",
+  "perspectiveSlider": "Perspective Slider",
+
+  "progressBar": "Progress Bar",
+  "linearProgressBar": "Linear Progress Bar",
+  "circularProgressBar": "Circular Progress Bar",
+
+  "slider": "Slider",
+
+  "images": "Images",
+  "zoomingImages": "Zooming Image",
+  "lightBoxShowingImage": "Light Box Showing Image",
+  "avatarImages": "Avatar Image",
+
+  "tables": "Tables",
+  "simpleTable": "Simple Table",
+  "editableTable": "Editable Table",
+  "responsiveTable": "Responsive Table",
+
+  "notifications": "Notifications",
+  "simpleNotifications": "Ordinary Notifications"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

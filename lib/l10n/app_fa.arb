@@ -1,0 +1,142 @@
+{
+  "helloWorld": "سلام دنیا!",
+  "username": "نام کاربری",
+  "password": "رمزعبور",
+  "usernamehint": "نام کاربری خود را وارد نمایید:",
+  "passwordhint": "رمزعبور خود را وارد نمایید:",
+  "login": "ثبت نام",
+
+  "adminMenu": "منوی ادمین",
+
+  "charts": "نمودارها",
+  "barCharts": "نمودار میله ای",
+  "circularCharts": "نمودار دایروی",
+  "linearChart": "نمودار خطی",
+
+  "text": "متن",
+  "sampleText": "آرزو دلیل بر استعداد است:)",
+  "ordinaryText": "متن معمولی",
+  "titleText": "متن عنوان",
+  "labledText": "متن لیبل",
+  "dottedText": "متن نقطه دار",
+  "markedText": "متن علامت دار",
+  "textSampleDescription": " انواع مدل های متن در سایز های مختلف در پنل در دسترس است.",
+  "dialogeBoxDescription": " انواع مدل های دیالوگ باکس در عملکرد های مختلف در پنل در دسترس است .",
+  "buttonDescription": " انواع مدل های دکمه معمولی ،آیکون دار و لودینگ دار سایزهای مختلف در پنل در دسترس است .",
+  "formDescription": " انواع مدل های فرم درعملکردهای مختلف برای گرفتن اطلاعات از کاربر در پنل در دسترس است .",
+  "imageDescription": " انواع عملکردهای مختلف برای نمایش عکس برای کاربر در پنل در دسترس است .",
+  "progressBarDescription":  " انواع مدل های نوار پیشرفت (خطی و دایروی) در پنل در دسترس است .",
+  "sliderDescription":  " انواع مدل های اسلایدر در پنل در دسترس است .",
+  "notificationsDescription":   " انواع مدل های اعلان در پنل در دسترس است .",
+  "chartDescription":   " مدل های متنوع نمودار در پنل در دسترس است .",
+
+
+  "button": "دکمه",
+  "samplButton": "ذخیره",
+
+  "dialogBox": "دیالوگ باکس",
+  "successDialogTitle": "دیالوگ باکس موفقیت آمیز",
+  "successDialogText": "موفقیت آمیز",
+  "successDialogDesc": "عملیات موفقیت آمیزطی شد.",
+
+  "errorDialogTitle": "ارور",
+  "errorDialogText": "دیالوگ باکس ارور",
+  "errorDialogDesc": "عملیات با ارور مواجه شد.",
+
+  "infoDialogTitle": "اطلاعات",
+  "infoDialogText": "دیالوگ باکس اطلاعات",
+  "infoDialogDesc": "عملیات اطلاعات دارد.",
+
+  "warningDialogTitle": "هشدار",
+  "warningDialogText": "دیالوگ باکس هشدار",
+  "warningDialogDesc": "عملیات هشدار دارد",
+
+
+  "autoHideDialogTitle": "پنهان کردن خودکار",
+  "autoHideDialogText": "دیالوگ باکس پنهان کردن خودکار",
+  "autoHideDialogDesc": "من توی 2 ثانیه پنهان می شوم.",
+
+  "bodyDialogTitle": "دیالوگ باکس محتوا",
+  "bodyDialogText": "دیالوگ باکس محتوا",
+  "bodyDialogDesc": "دیالوگ باکس محتوادیالوگ باکس محتوادیالوگ باکس محتوادیالوگ باکس محتوادیالوگ باکس محتوا",
+
+  "inputDialogTitle": "دیالوگ باکس ورودی",
+  "inputDialogText": "دیالوگ باکس ورودی",
+  "inputDialogDesc": "دیالوگ باکس ورودی",
+  "input1": "ورودی1",
+  "input2": "ورودی2",
+
+  "form": "فرم ها",
+
+  "textField": "تکست فیلد",
+  "priceTextField": "تکست فیلد قیمت",
+  "phoneNumbertextField": "تکتس فیلد شماره موبایل",
+  "shabaNumbertextField": "تکتس فیلد شماره شبا",
+  "datePicker": "انتخاب تاریخ شمسی",
+  "datePickerfa": "انتخاب تاریخ شمسی",
+  "datePickeren": "انتخاب تاریخ میلادی",
+  "timePickerHMS": "انتخاب زمان(ساعت/دقیقه/ثانیه)",
+  "timePickerHM": "انتخاب زمان(ساعت/دقیقه)",
+  "ordinarySlider": "اسلایدر معمولی",
+  "rangedSlider": "اسلایدر بازه دار",
+  "radioButons": "دکمه های رادیویی",
+  "textArea": "ناحیه متنی",
+  "starRateBar": "امتیاز دهی ستاره",
+  "dropDownButton": "دکمه کشویی",
+  "ordinaryCheckBox": "چک باکس معمولی",
+  "animationCheckBox": "چک باکس دارای انیمیشن",
+  "validationCheckBox": "چک باکس دارای اعتبار سنجی",
+  "filePicker": "انتخاب پوشه و فایل",
+
+  "textFieldType": "تکست فیلد",
+  "textFieldHint": "هینت تکست فیلد",
+
+  "textAreaType": "ناحیه متنی",
+  "textAreaHint": "هینت ناحیه متنی",
+
+  "datePickerTitle": "انتخاب کنید:",
+  "androidTimePickerTitle": "انتخاب کنید:",
+  "cupertinoTimePickerTitle": "انتخاب کنید:",
+  "time12hPickerTitle": "انتخاب کنید:",
+
+  "openText": " انتخاب فایل",
+  "pickText": "انتخاب پوشه",
+  "clearText": "پاک کردن فایل های کنونی",
+
+  "checkBoxTitle": "عنوان چک باکس",
+  "checkBoxWithValidator": "چک باکس با اعتبار سنجی",
+  "animatedCheckBoxTitle": "چک باکس با انیمیشن",
+  "checkBoxErrorText": "متن ارور چک باکس",
+  "checkBoxButtonText": "دخیره",
+
+  "dropDown1": "First Item",
+  "dropDown2": "Second Item",
+  "dropDown3": "Third Item",
+
+  "toggleButton": "دکمه تغییر وضعیت",
+
+  "slider": "اسلایدر",
+  "carouselSlider": "اسلایدر کاروسل",
+  "perspectiveSlider": "اسلایدر پرسپکتیو",
+
+  "progressBar": "نوار پیشرفت",
+  "linearProgressBar": "نوار پیشرفت خطی",
+  "circularProgressBar": "نوار پیشرفت دایروی",
+
+
+
+  "images": "تصاویر",
+  "zoomingImages": "تصویر با قابلیت بزرگنمایی",
+  "lightBoxShowingImage": "Light Box Showing Image",
+  "avatarImages": "تصویر در قالب آواتار",
+
+  "tables": "جداول",
+  "simpleTable": "جدول ساده",
+  "editableTable": "جدول قابل ویرایش",
+  "responsiveTable": "جدول ریسپانسیو",
+  "notifications": "اعلان ها",
+  "simpleNotifications": "اعلان های معمولی"
+
+
+
+}
