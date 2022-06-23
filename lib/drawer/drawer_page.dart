@@ -226,13 +226,14 @@ class _DrawerPageState extends State<DrawerPage> {
                                     setState(() {
                                       _currentIndex = index;
 
-                                      Platform.isWindows ||
-                                      Platform.isAndroid ||
-                                      Platform.isIOS ||
-                                      Platform.isLinux ||
-                                      Platform.isFuchsia
-                                          ? Navigator.pushReplacementNamed(context, _buttonNames[index][0].pageRout)
-                                          : Navigator.pushNamed(context, _buttonNames[index][0].pageRout);
+                                      // Platform.isWindows ||
+                                      // Platform.isAndroid ||
+                                      // Platform.isIOS ||
+                                      // Platform.isLinux ||
+                                      // Platform.isFuchsia
+                                      //     ? Navigator.pushReplacementNamed(context, _buttonNames[index][0].pageRout)
+                                      //     :
+                                      Navigator.pushNamed(context, _buttonNames[index][0].pageRout);
 
                                     }
                                     );
@@ -257,6 +258,9 @@ class _DrawerPageState extends State<DrawerPage> {
                                 //         ]))
                                 //     : null,
                                 child: ExpansionTile(
+                                  // maintainState: true,
+                                  initiallyExpanded:_acardionList[
+                                  _currentIndex] != 0? true:false,
                                   title: Row(
                                     children: [
                                       EsOrdinaryText(
@@ -315,13 +319,14 @@ class _DrawerPageState extends State<DrawerPage> {
                                                         _currentIndex2 = index2;
                                                         _currentIndex = index;
 
-                                                        Platform.isWindows ||
-                                                            Platform.isAndroid ||
-                                                            Platform.isIOS ||
-                                                            Platform.isLinux ||
-                                                            Platform.isFuchsia
-                                                            ? Navigator.pushReplacementNamed(context, _buttonNames[index][index2+1].pageRout)
-                                                            : Navigator.pushNamed(context, _buttonNames[index][index2+1].pageRout);
+                                                        // Platform.isWindows ||
+                                                        //     Platform.isAndroid ||
+                                                        //     Platform.isIOS ||
+                                                        //     Platform.isLinux ||
+                                                        //     Platform.isFuchsia
+                                                        //     ? Navigator.pushReplacementNamed(context, _buttonNames[index][index2+1].pageRout)
+                                                        //     :
+                                                        Navigator.pushNamed(context, _buttonNames[index][index2+1].pageRout);
 
                                                       });
                                                     },
