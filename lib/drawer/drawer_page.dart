@@ -1,6 +1,5 @@
-
 import 'dart:io' show Platform;
-
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:es_flutter_component/es_text/es_ordinary_text.dart';
 import 'package:es_route_admin_panel_skeleton/drawer/panelItems/panel_chart.dart';
 import 'package:es_route_admin_panel_skeleton/drawer/panelItems/Panel_tabel/panel_editable_table.dart';
@@ -16,7 +15,6 @@ import 'package:es_route_admin_panel_skeleton/drawer/panelItems/Panel_tabel/pane
 import 'package:es_route_admin_panel_skeleton/drawer/panelItems/panel_text_sample.dart';
 import 'package:flutter/material.dart';
 import '../images/panelConstants.dart';
-import '../center_sceen/center_screen.dart';
 import '../images/responsive_layout.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -225,18 +223,8 @@ class _DrawerPageState extends State<DrawerPage> {
                                   onTap: () {
                                     setState(() {
                                       _currentIndex = index;
-
-                                      // Platform.isWindows ||
-                                      // Platform.isAndroid ||
-                                      // Platform.isIOS ||
-                                      // Platform.isLinux ||
-                                      // Platform.isFuchsia
-                                      //     ? Navigator.pushReplacementNamed(context, _buttonNames[index][0].pageRout)
-                                      //     :
-                                      Navigator.pushNamed(context, _buttonNames[index][0].pageRout);
-
-                                    }
-                                    );
+                                      pushRout(_buttonNames[index][0].pageRout);
+                                    });
                                   },
                                 ),
                               ),
@@ -259,8 +247,10 @@ class _DrawerPageState extends State<DrawerPage> {
                                 //     : null,
                                 child: ExpansionTile(
                                   // maintainState: true,
-                                  initiallyExpanded:_acardionList[
-                                  _currentIndex] != 0? true:false,
+                                  initiallyExpanded:
+                                      _acardionList[_currentIndex] != 0
+                                          ? true
+                                          : false,
                                   title: Row(
                                     children: [
                                       EsOrdinaryText(
@@ -295,39 +285,15 @@ class _DrawerPageState extends State<DrawerPage> {
                                                             _acardionList[
                                                                     _currentIndex] !=
                                                                 0),
-                                                    // leading: Padding(
-                                                    //   padding: EdgeInsets.all(
-                                                    //       PanelConstants
-                                                    //           .paddingDimension),
-                                                    //   child: Icon(
-                                                    //     _buttonNames[index]
-                                                    //             [index2 + 1]
-                                                    //         .icon,
-                                                    //     color: (index2 ==
-                                                    //                 _currentIndex2 &&
-                                                    //             _acardionList[
-                                                    //                     _currentIndex] !=
-                                                    //                 0)
-                                                    //         ? PanelConstants
-                                                    //             .drawerSelectColor1
-                                                    //         : PanelConstants
-                                                    //             .drawerFontColor,
-                                                    //   ),
-                                                    // ),
                                                     onTap: () {
                                                       setState(() {
                                                         _currentIndex2 = index2;
                                                         _currentIndex = index;
 
-                                                        // Platform.isWindows ||
-                                                        //     Platform.isAndroid ||
-                                                        //     Platform.isIOS ||
-                                                        //     Platform.isLinux ||
-                                                        //     Platform.isFuchsia
-                                                        //     ? Navigator.pushReplacementNamed(context, _buttonNames[index][index2+1].pageRout)
-                                                        //     :
-                                                        Navigator.pushNamed(context, _buttonNames[index][index2+1].pageRout);
-
+                                                        pushRout(
+                                                            _buttonNames[index]
+                                                                    [index2 + 1]
+                                                                .pageRout);
                                                       });
                                                     },
                                                   ),
@@ -356,6 +322,12 @@ class _DrawerPageState extends State<DrawerPage> {
     );
   }
 
+  void pushRout(item) {
+    if (kIsWeb)
+      Navigator.pushNamed(context, item);
+    else
+      Navigator.pushReplacementNamed(context, item);
+  }
   BoxDecoration selectedBoxDecoration() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(20),

@@ -1,5 +1,4 @@
 import 'package:es_route_admin_panel_skeleton/app_bar/app_bar_widget.dart';
-import 'package:es_route_admin_panel_skeleton/center_sceen/center_screen.dart';
 import 'package:es_route_admin_panel_skeleton/images/responsive_layout.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +26,7 @@ class RoutMaker extends StatelessWidget {
 
           body: ResponsiveLayot(
             tiny: Container(),
-            phone: CenterScreen(),
+            phone: child as Widget,
             tablet: Row(
               children: [
                 // Expanded(child: PanelLeftPage()),
