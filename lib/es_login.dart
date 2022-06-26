@@ -98,7 +98,8 @@ class _EsLogin extends State<EsLogin> {
   }
   Widget _boxShow(Widget widget) {
     return BootstrapCol(
-        sizes: 'col-sm-12 col-ml-12 col-lg-6 col-xl-6',
+        sizes: 'col-sm-12 col-ml-12 col-lg-4 col-xl-4',
+        // offsets: 'offset-sm-0 offset-ml-0 offset-lg-4 offset-xl-4',
         child: Container(
           padding: EdgeInsets.symmetric(
             horizontal: PanelConstants.paddingDimension,

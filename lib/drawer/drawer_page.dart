@@ -80,7 +80,7 @@ class _DrawerPageState extends State<DrawerPage> {
     for (int i = 0; i < _buttonNames.length; i++) {
       _acardionList.add(_buttonNames[i].length != 1 ? 1 : 0);
     }
-    Widget drawerItems(item, index, currentIndex, bool con) {
+    Widget drawerItems(item, index, currentIndex, bool condition) {
       return Container(
         padding: EdgeInsets.only(
             right: PanelConstants.paddingDimension / 3,
@@ -93,7 +93,7 @@ class _DrawerPageState extends State<DrawerPage> {
                 item.icon,
                 size: 20,
                 // _buttonNames2[index][0].icon,
-                color: con
+                color: condition
                     ? PanelConstants.drawerSelectColor1
                     : PanelConstants.drawerFontColor,
               ),
@@ -101,7 +101,7 @@ class _DrawerPageState extends State<DrawerPage> {
             EsOrdinaryText(
               // data: _buttonNames2[index][0].title,
               data: item.title,
-              color: con
+              color: condition
                   ? PanelConstants.drawerSelectColor1
                   : PanelConstants.drawerFontColor,
               // style: TextStyle(color: Colors.white),
