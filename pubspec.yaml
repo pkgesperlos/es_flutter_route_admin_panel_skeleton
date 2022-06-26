@@ -1,4 +1,4 @@
-name: es_route_admin_panel_skeleton
+name: checklist_admin_panel
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -36,14 +36,13 @@ dependencies:
   fl_chart: ^0.50.6
   provider: 6.0.3
   flutter_bootstrap: ^2.0.0
-#  es_flutter_component:
-#    git:
-#      url: ssh://git@gitlab.com/haniehhojjatzadeh/es_flutter_component.git
-#      ref: main # branch name
+  shared_preferences: ^2.0.15
+  http: ^0.13.4
+  rxdart: ^0.27.4
+  shamsi_date: 1.0.1
   es_flutter_component:
-    git: git@github.com:pkgesperlos/es_flutter_component.git
-#      url: ssh://git@github.com:pkgesperlos/es_flutter_component.git
-#      ref: main # branch name
+    git: https://github.com/pkgesperlos/es_flutter_component.git
+
   flutter_localizations:
     sdk: flutter
   intl: ^0.17.0
@@ -78,6 +77,10 @@ flutter:
   generate: true
 
   # To add assets to your application, add an assets section, like this:
+  fonts:
+    - family: yekan
+      fonts:
+        - asset: assets/fonts/Yekan.ttf
   assets:
     - assets/
     - assets/images/

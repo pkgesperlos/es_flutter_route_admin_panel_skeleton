@@ -1,4 +1,4 @@
-# es_route_admin_panel_skeleton
+# checklist_admin_panel
 
 A new Flutter project.
 

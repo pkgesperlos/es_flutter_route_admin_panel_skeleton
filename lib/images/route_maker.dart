@@ -1,5 +1,5 @@
-import 'package:es_route_admin_panel_skeleton/app_bar/app_bar_widget.dart';
-import 'package:es_route_admin_panel_skeleton/images/responsive_layout.dart';
+import 'package:checklist_admin_panel/app_bar/app_bar_widget.dart';
+import 'package:checklist_admin_panel/images/responsive_layout.dart';
 import 'package:flutter/material.dart';
 
 import '../drawer/drawer_page.dart';

@@ -1,11 +1,11 @@
 import 'dart:io' show Platform;
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:es_flutter_component/es_text/es_ordinary_text.dart';
-import 'package:es_route_admin_panel_skeleton/drawer/panelItems/panel_chart.dart';
-import 'package:es_route_admin_panel_skeleton/drawer/panelItems/Panel_tabel/panel_editable_table.dart';
-import 'package:es_route_admin_panel_skeleton/drawer/panelItems/panel_form.dart';
-import 'package:es_route_admin_panel_skeleton/drawer/panelItems/Panel_tabel/panel_responsive_table.dart';
-import 'package:es_route_admin_panel_skeleton/drawer/panelItems/Panel_tabel/panel_simple_table.dart';
+import 'package:checklist_admin_panel/screens/dashboard.dart';
+import 'package:checklist_admin_panel/drawer/panelItems/Panel_tabel/panel_editable_table.dart';
+import 'package:checklist_admin_panel/drawer/panelItems/panel_form.dart';
+import 'package:checklist_admin_panel/drawer/panelItems/Panel_tabel/panel_responsive_table.dart';
+import 'package:checklist_admin_panel/drawer/panelItems/Panel_tabel/panel_simple_table.dart';
 import 'package:flutter/material.dart';
 import '../images/panelConstants.dart';
 import '../images/responsive_layout.dart';
@@ -44,7 +44,7 @@ class _DrawerPageState extends State<DrawerPage> {
         buttonsInfo(
             title: AppLocalizations.of(context)!.charts,
             icon: Icons.bar_chart,
-            page: PanelChart(),
+            page: Dashboard(),
             pageRout: '/chart'),
       ],
 

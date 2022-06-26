@@ -2,7 +2,7 @@
 import 'package:es_flutter_component/es_table/es_editable_table.dart';
 import 'package:es_flutter_component/es_table/es_simple_table.dart';
 import 'package:es_flutter_component/es_text/es_dotted_text.dart';
-import 'package:es_route_admin_panel_skeleton/images/panelConstants.dart';
+import 'package:checklist_admin_panel/images/panelConstants.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bootstrap/flutter_bootstrap.dart';
