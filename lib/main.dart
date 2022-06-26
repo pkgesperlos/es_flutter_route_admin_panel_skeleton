@@ -1,8 +1,8 @@
-
-import 'package:es_route_admin_panel_skeleton/drawer/panelItems/panel_chart.dart';
-import 'package:es_route_admin_panel_skeleton/es_login.dart';
+import 'package:es_route_admin_panel_skeleton/screens/dashboard.dart';
+import 'package:es_route_admin_panel_skeleton/screens/login.dart';
 import 'package:es_route_admin_panel_skeleton/language_change_provider.dart';
 import 'package:es_route_admin_panel_skeleton/images/route_maker.dart';
+import 'package:es_route_admin_panel_skeleton/screens/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -13,9 +13,6 @@ import 'drawer/panelItems/panel_form.dart';
 import 'drawer/panelItems/Panel_tabel/panel_simple_table.dart';
 
 void main() {
-
-
-
   runApp(MyApp());
 }
 
@@ -34,13 +31,17 @@ class _MyApp extends State<MyApp> {
     return ChangeNotifierProvider<LanguageChangeProvider>(
       create: (context) => LanguageChangeProvider(),
       child: Builder(
-          builder: (context) =>
-              MaterialApp(
-                // locale: Locale("fa"),
-                locale:
-                Provider
-                    .of<LanguageChangeProvider>(context, listen: true)
-                    .currentLocale,
+          builder: (context) => MaterialApp(
+
+
+            theme: ThemeData(
+              fontFamily: 'yekan'
+            ),
+            locale: Locale("fa"),
+                // locale:
+                // Provider
+                //     .of<LanguageChangeProvider>(context, listen: true)
+                //     .currentLocale,
                 debugShowCheckedModeBanner: false,
                 title: 'Localizations Sample App',
                 localizationsDelegates: [
@@ -56,17 +57,22 @@ class _MyApp extends State<MyApp> {
 
                 initialRoute: '/',
                 routes: {
-                  '/': (context) => EsLogin(),
-                  '/chart': (context) => RoutMaker(child: PanelChart(),),
-                  '/form': (context) => RoutMaker(child: PanelForm(),),
-                  '/responsiveTable': (context) => RoutMaker(child: PanelEditableTable()),
-                  '/editableTable': (context) => RoutMaker(child: PanelEditableTable()),
-                  '/simpleTable': (context) => RoutMaker(child: PanelSimpleTable()),
-
+                  '/': (context) => Splash(),
+                  '/login': (context) => Login(),
+                  '/dashboard': (context) => RoutMaker(
+                        child: Dashboard(),
+                      ),
+                  '/form': (context) => RoutMaker(
+                        child: PanelForm(),
+                      ),
+                  '/responsiveTable': (context) =>
+                      RoutMaker(child: PanelEditableTable()),
+                  '/editableTable': (context) =>
+                      RoutMaker(child: PanelEditableTable()),
+                  '/simpleTable': (context) =>
+                      RoutMaker(child: PanelSimpleTable()),
                 },
               )),
     );
   }
 }
-
-

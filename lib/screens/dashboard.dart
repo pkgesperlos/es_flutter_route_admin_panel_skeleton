@@ -1,5 +1,6 @@
+import 'package:es_flutter_component/images/Constants/constants.dart';
 import 'package:es_route_admin_panel_skeleton/drawer/panelItems/container_items.dart';
-import 'package:es_flutter_component/constants.dart';
+
 import 'package:es_flutter_component/es-chart/es-circular_chart.dart';
 import 'package:es_flutter_component/es-chart/es-linear-chart.dart';
 import 'package:es_flutter_component/es-chart/es_bar_chart.dart';
@@ -10,10 +11,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bootstrap/flutter_bootstrap.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-import '../../images/panelConstants.dart';
+import '../images/panelConstants.dart';
 
-class PanelChart extends StatelessWidget {
-  const PanelChart({Key? key}) : super(key: key);
+class Dashboard extends StatelessWidget {
+  const Dashboard({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
