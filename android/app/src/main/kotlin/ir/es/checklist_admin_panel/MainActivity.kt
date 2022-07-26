@@ -1,4 +1,4 @@
-package com.example.es_route_admin_panel_skeleton
+package com.example.checklist_admin_panel
 
 import io.flutter.embedding.android.FlutterActivity
 

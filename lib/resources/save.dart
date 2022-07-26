@@ -5,6 +5,7 @@ import 'dart:async';
 
 import 'dart:convert';
 
+import '../models/category_model.dart';
 import '../models/user_model.dart';
 
 
@@ -39,9 +40,9 @@ class Save<T> {
   Future<UserModel> getUserData() async {
     var sharedPreferences = await getter();
 
-    Map userMap = jsonDecode(sharedPreferences.getString('userData'));
+    Map map = jsonDecode(sharedPreferences.getString('userData'));
 
-    return UserModel.fromJson(userMap);
+    return UserModel.fromJson(map);
   }
 
 
@@ -54,6 +55,22 @@ class Save<T> {
   Future<String> getAuth() async {
     var sharedPreferences = await getter();
     return sharedPreferences.getString("auth");
+  }
+
+
+
+
+  setChecklistCategory(String value) async {
+    var sharedPreferences = await setter();
+
+    sharedPreferences.setString("checklistCategory", value);
+  }
+
+  Future<CategoryModelList> getChecklistCategory() async {
+    var sharedPreferences = await getter();
+    List map = jsonDecode(sharedPreferences.getString('checklistCategory'));
+
+    return CategoryModelList.fromJson(map);
   }
 
 

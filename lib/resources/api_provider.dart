@@ -22,24 +22,30 @@ class ApiProvider<T> {
 
   Future fetchDataPOST(
       String apiAddress,
-      Map<String, String> body,
+      Map<String, dynamic> body,
       Function(String data) returnType,
       Function(Response)? fullResponse) async {
     Response response;
     debugPrint(Strings.apiUrl + apiAddress);
     debugPrint(body.toString());
+
+
     try {
+
       response = await client.post(Uri.parse(Strings.apiUrl + apiAddress),
           body: json.encode(body),
           headers: {
             "accept": "application/json",
             "content-type": "application/json"
           }).timeout(const Duration(seconds: Strings.requestTimeOut));
+
     } on TimeoutException catch (e) {
+
       debugPrint(e.toString());
       return returnType(getError(RequestError.timeOut));
     } on Exception catch (e) {
       //(e.toString());
+
       return returnType(getError(RequestError.noNet));
     }
 
@@ -58,10 +64,11 @@ class ApiProvider<T> {
 
   Future fetchDataPOSTAuth(
       String apiAddress,
-      Map<String, String> body,
+      Map<String, dynamic> body,
       Function(String data) returnType,
       Function(Response)? fullResponse) async {
     String authJwt = await Save().getAuth();
+    debugPrint(authJwt);
     debugPrint(Strings.apiUrlNeedAuth + apiAddress);
     Response response;
     try {

@@ -1,7 +1,9 @@
 import 'dart:io' show Platform;
+import 'package:checklist_admin_panel/screens/menu_pages/category.dart';
+import 'package:checklist_admin_panel/screens/menu_pages/checklist.dart';
+import 'package:checklist_admin_panel/screens/menu_pages/media.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:es_flutter_component/es_text/es_ordinary_text.dart';
-import 'package:checklist_admin_panel/screens/dashboard.dart';
 import 'package:checklist_admin_panel/drawer/panelItems/Panel_tabel/panel_editable_table.dart';
 import 'package:checklist_admin_panel/drawer/panelItems/panel_form.dart';
 import 'package:checklist_admin_panel/drawer/panelItems/Panel_tabel/panel_responsive_table.dart';
@@ -10,6 +12,8 @@ import 'package:flutter/material.dart';
 import '../images/panelConstants.dart';
 import '../images/responsive_layout.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+import '../screens/menu_pages/dashboard.dart';
 
 class DrawerPage extends StatefulWidget {
   @override
@@ -42,38 +46,54 @@ class _DrawerPageState extends State<DrawerPage> {
     List<List> _buttonNames = [
       [
         buttonsInfo(
-            title: AppLocalizations.of(context)!.charts,
+            title: AppLocalizations.of(context)!.dashboard,
             icon: Icons.bar_chart,
             page: Dashboard(),
-            pageRout: '/chart'),
+            pageRout: '/dashboard'),
       ],
 
       [
         buttonsInfo(
-            title: AppLocalizations.of(context)!.form,
+            title: AppLocalizations.of(context)!.media,
             icon: Icons.list_alt,
-            page: PanelForm(),
-            pageRout: '/form')
+            page: Media(),
+            pageRout: '/media')
       ],
 
       [
-        AppLocalizations.of(context)!.tables,
         buttonsInfo(
-            title: AppLocalizations.of(context)!.simpleTable,
-            icon: Icons.table_chart_outlined,
-            page: PanelSimpleTable(),
-            pageRout: '/simpleTable'),
-        buttonsInfo(
-            title: AppLocalizations.of(context)!.editableTable,
-            icon: Icons.table_rows,
-            page: PanelEditableTable(),
-            pageRout: '/editableTable'),
-        buttonsInfo(
-            title: AppLocalizations.of(context)!.responsiveTable,
-            icon: Icons.table_chart,
-            page: PanelResponsiveTable(),
-            pageRout: '/responsiveTable')
+            title: AppLocalizations.of(context)!.category,
+            icon: Icons.list_alt,
+            page: Checklist(),
+            pageRout: '/category')
       ],
+
+      [
+        buttonsInfo(
+            title: AppLocalizations.of(context)!.checklist,
+            icon: Icons.list_alt,
+            page: Checklist(),
+            pageRout: '/checklist')
+      ],
+
+      // [
+      //   AppLocalizations.of(context)!.tables,
+      //   buttonsInfo(
+      //       title: AppLocalizations.of(context)!.simpleTable,
+      //       icon: Icons.table_chart_outlined,
+      //       page: PanelSimpleTable(),
+      //       pageRout: '/simpleTable'),
+      //   buttonsInfo(
+      //       title: AppLocalizations.of(context)!.editableTable,
+      //       icon: Icons.table_rows,
+      //       page: PanelEditableTable(),
+      //       pageRout: '/editableTable'),
+      //   buttonsInfo(
+      //       title: AppLocalizations.of(context)!.responsiveTable,
+      //       icon: Icons.table_chart,
+      //       page: PanelResponsiveTable(),
+      //       pageRout: '/responsiveTable')
+      // ],
 
     ];
     List _acardionList = [];
@@ -99,8 +119,8 @@ class _DrawerPageState extends State<DrawerPage> {
               ),
             ),
             EsOrdinaryText(
-              // data: _buttonNames2[index][0].title,
-              data: item.title,
+              // _buttonNames2[index][0].title,
+              item.title,
               color: con
                   ? PanelConstants.drawerSelectColor1
                   : PanelConstants.drawerFontColor,
@@ -135,7 +155,7 @@ class _DrawerPageState extends State<DrawerPage> {
                 //title of drawer
                 ListTile(
                   title: EsOrdinaryText(
-                    data: AppLocalizations.of(context)!.adminMenu,
+                    AppLocalizations.of(context)!.adminMenu,
                   ),
                   //place a clse item for non computer drawer mode
                   trailing: ResponsiveLayot.isComputer(context)
@@ -201,7 +221,7 @@ class _DrawerPageState extends State<DrawerPage> {
                                   title: Row(
                                     children: [
                                       EsOrdinaryText(
-                                        data: _buttonNames[index][0],
+                                        _buttonNames[index][0],
                                         // style: TextStyle(color: Colors.white),
                                       ),
                                     ],

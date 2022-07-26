@@ -23,7 +23,7 @@ class ContainerItems extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 EsDottedText(
-                    data: title, size: 15, color: PanelConstants.itemColor),
+                    title, size: 15, color: PanelConstants.itemColor),
                 EsInformationButton(
                   dialogeText: information,
                 ),

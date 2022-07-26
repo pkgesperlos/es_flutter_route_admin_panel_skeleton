@@ -1,16 +1,16 @@
 import 'package:checklist_admin_panel/drawer/panelItems/container_items.dart';
-import 'package:es_flutter_component/constants.dart';
 import 'package:es_flutter_component/es-chart/es-circular_chart.dart';
 import 'package:es_flutter_component/es-chart/es-linear-chart.dart';
 import 'package:es_flutter_component/es-chart/es_bar_chart.dart';
 import 'package:es_flutter_component/es_text/es_ordinary_text.dart';
 import 'package:checklist_admin_panel/images/panelConstants.dart';
+import 'package:es_flutter_component/resources/Constants/constants.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bootstrap/flutter_bootstrap.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-import '../images/panelConstants.dart';
+import '../../images/panelConstants.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({Key? key}) : super(key: key);
@@ -18,7 +18,7 @@ class Dashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List list = [
-      ContainerItems(widget:EsBarChart(),title:AppLocalizations.of(context)!.barCharts,
+      ContainerItems(widget:EsBarChart(),title:AppLocalizations.of(context)!.media,
           information: "It is a bar chart located in: \n es_flutter_component>lib>es_chart>es_bar_chart.dart \n and is used as EsBarChart()"),
       ContainerItems(widget:EsLinearChart(),title:AppLocalizations.of(context)!.linearChart,
           information:"It is a linear chart located in: \n es_flutter_component>lib>es_chart>es_linear_chart.dart \n and is used as EsLinearChart()"),
@@ -31,6 +31,8 @@ class Dashboard extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
+
+
               Container(
                 padding: EdgeInsets.symmetric(
                     vertical: PanelConstants.paddingDimension),
@@ -39,7 +41,7 @@ class Dashboard extends StatelessWidget {
                 width: double.maxFinite,
                 ////////////////////////
                 child: EsOrdinaryText(
-                  data:AppLocalizations.of(context)!.chartDescription ,
+                 AppLocalizations.of(context)!.chartDescription ,
                 ),
                 decoration: BoxDecoration(
                     color: PanelConstants.forGround,

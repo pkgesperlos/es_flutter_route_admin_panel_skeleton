@@ -5,7 +5,7 @@
 // 'flutter create' template.
 
 // The application's name. By default this is also the title of the Flutter window.
-PRODUCT_NAME = es_route_admin_panel_skeleton
+PRODUCT_NAME = checklist_admin_panel
 
 // The application's bundle identifier
 PRODUCT_BUNDLE_IDENTIFIER = com.example.esRouteAdminPanelSkeleton

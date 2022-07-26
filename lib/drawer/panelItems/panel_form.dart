@@ -1,6 +1,4 @@
-import 'package:es_flutter_component/es_form/es_dropp_down_button/es_drop_down_button.dart';
 import 'package:checklist_admin_panel/drawer/panelItems/container_items.dart';
-import 'package:es_flutter_component/constants.dart';
 import 'package:es_flutter_component/es_form/es_animated_checkbox.dart';
 import 'package:es_flutter_component/es_form/es_checkbox.dart';
 import 'package:es_flutter_component/es_form/es_checkbox_vallidation.dart';
@@ -17,12 +15,11 @@ import 'package:es_flutter_component/es_form/es_price_field.dart';
 import 'package:es_flutter_component/es_form/es_radio_button.dart';
 import 'package:es_flutter_component/es_form/es_ranged_slider.dart';
 import 'package:es_flutter_component/es_form/es_rating_bar.dart';
-import 'package:es_flutter_component/es_form/es_shaba_number_field.dart';
-import 'package:es_flutter_component/es_form/es_text_area.dart';
-import 'package:es_flutter_component/es_form/es_text_field.dart';
+import 'package:es_flutter_component/es_form/es_text_field/es_text_field.dart';
 import 'package:es_flutter_component/es_form/es_toggle_button.dart';
 import 'package:es_flutter_component/es_text/es_ordinary_text.dart';
 import 'package:checklist_admin_panel/images/panelConstants.dart';
+import 'package:es_flutter_component/resources/Constants/constants.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bootstrap/flutter_bootstrap.dart';
@@ -38,7 +35,6 @@ class PanelForm extends StatelessWidget {
     List list = [
       ContainerItems(
           widget:EsTextField(
-            type: AppLocalizations.of(context)!.textFieldType,
             hint: AppLocalizations.of(context)!.textFieldHint,
           ),
           title:AppLocalizations.of(context)!.textField,
@@ -52,11 +48,7 @@ class PanelForm extends StatelessWidget {
           information:"It is a phone number field located in: \n es_flutter_component>lib>es_form>es_phone_number_field.dart \n and is used as: \n "
               """ EsPhoneNumberField()"""
       ),
-      ContainerItems(widget:EsShabaNumberField(),
-          title:AppLocalizations.of(context)!.shabaNumbertextField,
-          information:"It is a shaba number field located in: \n es_flutter_component>lib>es_form>es_shaba_number_field.dart \n and is used as: \n "
-              """ EsShabaNumberField()"""
-      ),
+
       ContainerItems(widget:EsPriceField(),title: AppLocalizations.of(context)!.priceTextField,
           information:"It is a price field located in: \n es_flutter_component>lib>es_form>es_price_field.dart \n and is used as: \n "
               """ EsPriceField()"""),
@@ -102,21 +94,7 @@ class PanelForm extends StatelessWidget {
           information:"It is a ranged slider located in: \n es_flutter_component>lib>es_form>es_ranged_slider.dart \n and is used as: \n "
               """EsRengedSlider()"""
       ),
-      ContainerItems(widget:EsRadioButton(), title:AppLocalizations.of(context)!.radioButons,
-          information:"It is a radio button located in: \n es_flutter_component>lib>es_form>es_radio_button.dart \n and is used as: \n "
-              """EsRadioButton()"""
-      ),
-      ContainerItems(
-          widget:EsTextArea(
-            type: AppLocalizations.of(context)!.textAreaType,
-            hint: AppLocalizations.of(context)!.textAreaHint,
-          ),
-          title:AppLocalizations.of(context)!.textArea,
-          information:"It is a text area located in: \n es_flutter_component>lib>es_form>es_text_area.dart \n and is used as: \n "
-              """EsTextArea(
-            type: AppLocalizations.of(context)!.textAreaType,
-            hint: AppLocalizations.of(context)!.textAreaHint,)"""
-      ),
+
       ContainerItems(widget:EsRatingBar(), title:AppLocalizations.of(context)!.starRateBar,
           information:"It is a rating bar located in: \n es_flutter_component>lib>es_form>es_rating_bar.dart \n and is used as: \n "
               """EsRatingBar()"""
@@ -125,7 +103,7 @@ class PanelForm extends StatelessWidget {
         widget:IntrinsicWidth(
             child: EsCheckBox(
               title: EsOrdinaryText(
-                data: AppLocalizations.of(context)!.checkBoxTitle,
+                AppLocalizations.of(context)!.checkBoxTitle,
               ),
               onSaved: (bool) {},
               validator: (bool) {},
@@ -135,7 +113,7 @@ class PanelForm extends StatelessWidget {
         information:"It is a ordinary check box located in: \n es_flutter_component>lib>es_form>es_checkbox.dart \n and is used as: \n "
               """EsCheckBox(
               title: EsOrdinaryText(
-                data: AppLocalizations.of(context)!.checkBoxTitle,
+                AppLocalizations.of(context)!.checkBoxTitle,
               ),
               onSaved: (bool) {},
               validator: (bool) {},)""",
@@ -166,46 +144,12 @@ class PanelForm extends StatelessWidget {
               """EsAnimatedCheckBox(
                 title: AppLocalizations.of(context)!.animatedCheckBoxTitle)"""
       ),
-      ContainerItems(
-          widget:EsDropDownButton(
-            items: [
-              // "گزینه1","گزینه2","گزینه3",
-              AppLocalizations.of(context)!.dropDown1,
-              AppLocalizations.of(context)!.dropDown2,
-              AppLocalizations.of(context)!.dropDown3,
-            ],
-            onTapItems: [() {}, () {}, () {}],
-          ),
-          title:AppLocalizations.of(context)!.dropDownButton,
-          information:"It is dropp down button located in: \n es_flutter_component>lib>es_form>es_drop_down_button.dart \n and is used as: \n "
-              """EsDropDownButton(
-            items: [
-              AppLocalizations.of(context)!.dropDown1,
-              AppLocalizations.of(context)!.dropDown2,
-              AppLocalizations.of(context)!.dropDown3,
-            ],
-            onTapItems: [() {}, () {}, () {}],
-          )"""
-      ),
+
       ContainerItems(widget:ESToggleButton(), title:AppLocalizations.of(context)!.toggleButton,
           information:"It is toggle button located in: \n es_flutter_component>lib>es_form>es_toggle_button.dart \n and is used as: \n "
               """ESToggleButton()"""
       ),
-      ContainerItems(
-          widget:Center(
-              child: EsFilePicker(
-            openText: AppLocalizations.of(context)!.openText,
-            pickText: AppLocalizations.of(context)!.pickText,
-            clearText: AppLocalizations.of(context)!.clearText,
-          )),
-          title:AppLocalizations.of(context)!.filePicker,
-          information:"It is file picker located in: \n es_flutter_component>lib>es_form>es_file picker.dart \n and is used as: \n "
-              """EsFilePicker(
-            openText: AppLocalizations.of(context)!.openText,
-            pickText: AppLocalizations.of(context)!.pickText,
-            clearText: AppLocalizations.of(context)!.clearText,
-          )"""
-      ),
+
     ];
     return Material(
         color: PanelConstants.backGround,
@@ -220,7 +164,7 @@ class PanelForm extends StatelessWidget {
                 width: double.maxFinite,
                 ////////////////////////
                 child: EsOrdinaryText(
-                  data: AppLocalizations.of(context)!.formDescription,
+                  AppLocalizations.of(context)!.formDescription,
                 ),
                 decoration: BoxDecoration(
                     color: PanelConstants.forGround,

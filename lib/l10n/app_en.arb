@@ -11,8 +11,10 @@
 
   "adminMenu": "Admin Menu",
 
-  "charts": "Charts",
-  "barCharts": "Bar Chart",
+  "dashboard": "Dashboard",
+  "media": "media",
+  "category": "category",
+  "checklist": "checklist",
   "circularCharts": "Circular Chart",
   "linearChart": "linear Chart",
 

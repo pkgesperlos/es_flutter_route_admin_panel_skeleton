@@ -1,10 +1,10 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.14)
-project(es_route_admin_panel_skeleton LANGUAGES CXX)
+project(checklist_admin_panel LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
-set(BINARY_NAME "es_route_admin_panel_skeleton")
+set(BINARY_NAME "checklist_admin_panel")
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.

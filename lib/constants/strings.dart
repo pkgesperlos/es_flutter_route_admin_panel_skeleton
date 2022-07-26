@@ -22,23 +22,25 @@ class Strings{
   static const String supportPhone = "000000000000";
   static const String aboutUsUrl = "http://asas";
 
+  static const String successMessage = "عملیات با موفقیت انجام شد";
 
 
-  static const String host = "127.0.0.1:8000";
+  static const String host = "api.checklista.ir";
   static const String _rootUrl = "http://$host";
 
   static const siteUrl = "$_rootUrl/";
   static const baseFileUrl = "$_rootUrl";
   static const baseImage = "$_rootUrl";
-  static const apiUrl = "$_rootUrl/api/es/admin/auth/";
-  static const apiUrlNeedAuth = "$_rootUrl/api/es/admin/";
+  static const apiUrl = "$_rootUrl/api/es/admin/";
+  static const apiUrlNeedAuth = "$_rootUrl/api/es/admin/auth/";
 
 
   static const apiMapMarker = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=30.291187,%2057.068061&radius=5000&key=AIzaSyBKpCMR9IJ6uJGCZgQfT47sixpeTpVwMFc";
   //static const apiUrl = "http://10.0.2.2:8000/api/v1/cargo-owner/";
 
-//213.232.127.35
+//api.checklista.ir
 //10.0.2.2:8000
+//127.0.0.1:8000
 
 
 }

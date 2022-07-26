@@ -8,8 +8,10 @@
 
   "adminMenu": "منوی ادمین",
 
-  "charts": "نمودارها",
-  "barCharts": "نمودار میله ای",
+  "dashboard": "داشبورد",
+  "media": "رسانه",
+  "category": "دسته ها",
+  "checklist": "مدیریت چک لیست ها",
   "circularCharts": "نمودار دایروی",
   "linearChart": "نمودار خطی",
 

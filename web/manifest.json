@@ -1,6 +1,6 @@
 {
-    "name": "es_route_admin_panel_skeleton",
-    "short_name": "es_route_admin_panel_skeleton",
+    "name": "checklist_admin_panel",
+    "short_name": "checklist_admin_panel",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

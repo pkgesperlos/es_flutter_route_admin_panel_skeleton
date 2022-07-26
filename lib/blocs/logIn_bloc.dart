@@ -15,9 +15,9 @@ import '../resources/save.dart';
 class LogInBloc<T> {
   final apiProvider = ApiProvider<T>();
 
-  PublishSubject<T> _publishSubject = PublishSubject<T>();
+  PublishSubject<T?> _publishSubject = PublishSubject<T?>();
 
-  Stream<T> get actions => _publishSubject.stream;
+  Stream<T?> get actions => _publishSubject.stream;
 
   Future fetchLogin({
     required String apiAddress,
@@ -25,6 +25,10 @@ class LogInBloc<T> {
     Function(String)? directResult,
     Function(Response)? fullResponse,
   }) async {
+
+
+    _publishSubject.add(null);
+
     var model = await apiProvider.fetchDataPOST(apiAddress, body, (res) {
 
       if (BlocCheck.hasError(res) == "null") {
@@ -39,6 +43,8 @@ class LogInBloc<T> {
 
     if (model != null) {
       _publishSubject.add(model);
+
+      
     }
     return model;
   }

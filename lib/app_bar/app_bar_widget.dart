@@ -1,4 +1,4 @@
-import 'package:es_flutter_component/es_form/es_dropp_down_button/es_drop_down_button.dart';
+import 'package:es_flutter_component/es_form/es_drop_down_button/es_drop_down_button_hj.dart';
 import 'package:es_flutter_component/es_image/es_avatar_image.dart';
 import 'package:checklist_admin_panel/language_change_provider.dart';
 import 'package:flutter/material.dart';
@@ -122,7 +122,7 @@ class _AppBarWidgetState extends State<AppBarWidget> {
           //   ),
           Spacer(),
           //Drop down button for selecting languages
-          EsDropDownButton(
+          EsDropDownButtonHJ(
             items: ["English", "Persian"],
             onTapItems: [
               () {

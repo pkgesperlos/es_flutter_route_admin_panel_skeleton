@@ -40,8 +40,11 @@ dependencies:
   http: ^0.13.4
   rxdart: ^0.27.4
   shamsi_date: 1.0.1
+  responsive_table: ^0.2.0+2
+  cached_network_image: ^3.2.1
   es_flutter_component:
     git: https://github.com/pkgesperlos/es_flutter_component.git
+
 
   flutter_localizations:
     sdk: flutter
